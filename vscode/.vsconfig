@@ -1,0 +1,269 @@
+{
+  //----------------------------------------------------* UI *--------------------------------------------------//
+  //Font
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+
+  //Font Size
+  "editor.fontSize": 12,
+  "terminal.integrated.fontSize": 12,
+
+  //Indentation
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.3)",
+    "rgba(127,255,127,0.3)",
+    "rgba(255,127,255,0.3)",
+    "rgba(79,236,236,0.3)"
+  ],
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 1,
+  "indentRainbow.ignoreLinePatterns": ["/[ \t]* [*]/g", "/[ \t]+[/]{2}/g"],
+
+  //Background
+  "background.editorBackgrounds": [],
+  "background.windowBackgrounds": [
+    "/Users/ali/Downloads/bg/lucas-calloch-P-yzuyWFEIk-unsplash.jpg",
+    "/Users/ali/Downloads/MyMac/Media/Picture/bg/lucas-calloch-P-yzuyWFEIk-unsplash.jpg"
+  ],
+  "background.autoInstall": false,
+  "background.backgroundBlur": ["0", "0", "0", "0"],
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "editor.stickyScroll.enabled": false,
+
+  //Formatter
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  //Workbench
+  "workbench.activityBar.location": "top",
+  "workbench.editor.enablePreview": false,
+
+  //Window
+  "window.zoomLevel": 1,
+
+  //Editor
+  "editor.lineNumbers": "relative",
+  "editor.lineHeight": 22,
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "editor.accessibilitySupport": "off",
+  "editor.linkedEditing": true,
+  "editor.tabSize": 2,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "cSpell.userWords": [
+    "Codeium",
+    "defaultsauto",
+    "marketanalysis",
+    "Neovim",
+    "Noob",
+    "reduxjs",
+    "tailwindcss"
+  ],
+  "terminal.integrated.env.osx": {},
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "reactSnippets.settings.importReactOnTop": false,
+  "extensions.ignoreRecommendations": true,
+
+  //----------------------------------------------------* Git *---------------------------------------------------//
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "githubPullRequests.remotes": [
+    "origin",
+    "upstream",
+    "https://github.com/oghosto-M/nahalit-1403"
+  ],
+
+  //----------------------------------------------------* vim *---------------------------------------------------//
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [],
+  "vim.commandLineModeKeyBindings": [],
+
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "j"],
+      "after": ["J"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["j"],
+      "after": ["h"]
+    },
+    {
+      "before": ["k"],
+      "after": ["j"]
+    },
+    {
+      "before": ["i"],
+      "after": ["k"]
+    },
+    {
+      "before": ["l"],
+      "after": ["l"]
+    },
+    {
+      "before": ["h"],
+      "after": ["i"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["I"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["L"],
+      "after": ["w"]
+    },
+    {
+      "before": ["J"],
+      "after": ["b"]
+    },
+
+    //to not
+    { "before": ["<leader>", "n"], "commands": [":nohl"] },
+
+    // for split view
+    { "before": ["<leader>", "v"], "commands": [":vsp"] },
+    { "before": ["<leader>", "s"], "commands": [":sp"] },
+
+    // file navigation
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["g", "p", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "p", "i"],
+      "commands": ["editor.action.peekImplementation"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "p", "t"],
+      "commands": ["editor.action.peekTypeDefinition"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "j"],
+      "after": ["J"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["j"],
+      "after": ["h"]
+    },
+    {
+      "before": ["k"],
+      "after": ["j"]
+    },
+    {
+      "before": ["i"],
+      "after": ["k"]
+    },
+    {
+      "before": ["l"],
+      "after": ["l"]
+    },
+    {
+      "before": ["h"],
+      "after": ["i"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["I"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["L"],
+      "after": ["w"]
+    },
+    {
+      "before": ["J"],
+      "after": ["b"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+    "asvetliakov.vscode-neovim": 1
+  },
+  "git.enableSmartCommit": true,
+  "githubPullRequests.pullBranch": "never",
+  "workbench.iconTheme": "vscode-icons",
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "One Dark Pro",
+  "redhat.telemetry.enabled": true
+}
